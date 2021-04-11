@@ -97,32 +97,39 @@ import { mapActions, mapGetters } from 'vuex'
 
 <style lang="scss" scoped>
 
-.main-title {
-  font-size: 2.3rem;
-  margin-top: 2rem;
-}
-
-.form {
-  margin-top: 1.8rem;
-  width:50%;
-  margin-left: 18rem;
-
-  &-item {
-    width:50%;
+  .main-title {
+    font-size: 2.3rem;
+    margin-top: 2rem;
   }
-}
 
-.btn {
-  margin-top: 1.5rem;
-  background-color: #1f4646
-}
-
-.action-btn {
-  margin-left: .8em;;
-}
+  .form {
+    margin-top: 1.8rem;
+    width:50%;
+    margin-left: 6rem;
 
 
+    &-item {
+      width:50%;
+    }
+  }
 
+  .btn {
+    margin-top: 1.5rem;
+    background-color: #1f4646;
+  }
+
+  .action-btn {
+    margin-left: .8em;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .form {
+      margin-left: 18rem;
+      width:50%;
+    }
+  }
+
+ 
 </style>
 
 

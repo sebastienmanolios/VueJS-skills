@@ -45,24 +45,48 @@
 <style lang="scss" scoped>
 
   .skill-table {
-    margin: 2rem auto 0 auto;
-    &__category {
-      font-size: 1.1rem;
-      padding: .8rem 1.5rem .8rem 1.5rem;
-      text-transform: capitalize;
-    }
-    &__categories {
-      border-top: solid .5px black
-    }  
-    &__value {
-      padding-top:1.1rem;
-      border-top: solid .5px black;
-      border-bottom : solid .5px black;
-    }
-    &__link {
-      color: green;
-      font-size: 1.2em;
-    }
+        margin: 2rem auto 0 auto;
+        &__category {
+          font-size: 1.1rem;
+          padding: .8rem .2rem;
+          text-transform: capitalize;
+        }
+        &__categories {
+          border-top: solid .5px black
+        }  
+        &__value {
+          padding-top:1.1rem;
+          border-top: solid .5px black;
+          border-bottom : solid .5px black;
+        }
+        &__link {
+          color: green;
+        }
+      } 
+
+  
+
+  @media only screen and (min-width: 600px) {
+    .skill-table {
+      margin: 2rem auto 0 auto;
+      &__category {
+        font-size: 1.1rem;
+        padding: .8rem 1.5rem .8rem 1.5rem;
+        text-transform: capitalize;
+      }
+      &__categories {
+        border-top: solid .5px black
+      }  
+      &__value {
+        padding-top:1.1rem;
+        border-top: solid .5px black;
+        border-bottom : solid .5px black;
+      }
+      &__link {
+        color: green;
+        font-size: 1.2em;
+      }
+    } 
   }
 
 </style>

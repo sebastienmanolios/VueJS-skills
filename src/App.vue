@@ -36,18 +36,26 @@ ul, li {
   &-links {
     list-style-type: none;
     display: flex;
-      text-align: center;
+    text-align: center;
   } 
 
   &-link {
     font-size: 1.2em;
     font-weight: bold;
     color: #2c3e50;
-    padding: 1.3rem;
+    padding: .35rem;
 
     &.router-link-exact-active {
       color: #42b983;
     }
   }
 }
+
+@media only screen and (min-width: 500px){
+  .nav-link {
+    padding: 1.3rem;
+  }
+  
+}
+
 </style>
