@@ -1,4 +1,8 @@
-# pets
+# IT skills
+
+ ## About
+
+ It's an easy project about using and understanding vuex
 
 ## Project setup
 ```

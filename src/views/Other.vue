@@ -1,11 +1,11 @@
 <template>
-  <div>
-    <h1>Cats for Adoption</h1>
+  <main>
+    <h1 class="main-title">Other skills</h1>
     <Table 
-      species="cats"
-      :tableName="cats"
+      side="other"
+      :tableName="other"
     />
-  </div>
+  </main>
 </template>
 
 <script>
@@ -22,7 +22,7 @@
     },
     computed: {
       ...mapState([
-        'cats'
+        'other'
       ])
     },
   }
@@ -30,6 +30,8 @@
 
 <style lang="scss" scoped>
 
-
+// .main-title {
+//   margin-top: 1.5rem;
+// }
 
 </style>

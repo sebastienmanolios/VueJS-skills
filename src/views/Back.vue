@@ -1,11 +1,11 @@
 <template>
-  <div>
-    <h1>Dogs for Adoption</h1>
+  <main>
+    <h1 class="main-title">Back skills</h1>
     <Table 
-      species="dogs"
-      :tableName="dogs"
+      side="back"
+      :tableName="back"
     />
-  </div>
+  </main>
 </template>
 
 <script>
@@ -22,7 +22,7 @@
     },
     computed: {
       ...mapState([
-        'dogs'
+        'back'
       ])
     },
   }

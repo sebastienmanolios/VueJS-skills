@@ -1,45 +1,41 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import cats from '../data/cats'
-import dogs from '../data/dogs'
+import back from '../data/back'
+import front from '../data/front'
+import other from '../data/other'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
   
   state: {
-    cats,
-    dogs,
-    pets: [...cats, ...dogs]
+    front,
+    back,
+    other,
+    skills: [...front, ...back, ...other]
   },
 
-  getters: {
-    animalsCount: (state) => {
-      return state.cats.length + state.dogs.length
-    },
-    getAllCats: (state) => {
-      return state.pets.filter((pet) => {
-        return pet.species === 'cat'
-      })
+   getters: {
+     skillsCount: (state) => {
+       return state.skills.length
+     },
+     getAllFrontSkills: (state) => {
+      return state.skills.filter((skill) => {
+         return skill.side === 'front'
+       })
     }
-  },
+   },
 
-  mutations: {
-    appendPet: (state, { species, pet }) => {
-      state[species].push(pet)
-    }
-  },
+   mutations: {
+     appendSkill: (state, { side, skill }) => {
+       state[side].push(skill)
+     }
+   },
   
   actions: {
-    // addPet: (context, pet) => {
-    //   context.commit('appendPet', pet)
-    // }
-    // addPet: ({ commit }, { pet, species }) => {
-    //   commit('appendPet', pet, species)
-    // }
-    addPet: ({ commit }, payload) => {
-      commit('appendPet', payload)
+     addSkill: ({ commit }, payload) => {
+     commit('appendSkill', payload)
     }
   },
   modules: {

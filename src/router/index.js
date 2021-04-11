@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Cats from '../views/Cats.vue'
-import Dogs from '../views/Dogs.vue'
-import Pet from '../views/Pet.vue'
+import Front from '../views/Front.vue'
+import Back from '../views/Back.vue'
+import Other from '../views/Other.vue'
+import Skills from '../views/Skills.vue'
 
 Vue.use(VueRouter)
 
@@ -14,19 +15,24 @@ const routes = [
     component: Home
   },
   {
-    path: '/cats',
-    name: 'Cats',
-    component: Cats
+    path: '/front',
+    name: 'Front',
+    component: Front
   },
   {
-    path: '/dogs',
-    name: 'Dogs',
-    component: Dogs
+    path: '/back',
+    name: 'Back',
+    component: Back
   },
   {
-    path: '/pets/:species/:id',
-    name: 'Pet',
-    component: Pet
+    path: '/other',
+    name: 'Other',
+    component: Other
+  },
+  {
+    path: '/skills/:side/:id',
+    name: 'Skills',
+    component: Skills
   }
 ]
 
